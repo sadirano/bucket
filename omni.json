@@ -6,16 +6,15 @@
       "ripgrep",
       "everything-cli"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Omni Folder Navigation Utility",
     "homepage": "https://github.com/sadirano/omni",
     "license": "MIT",
-    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.2.zip",
-    "hash": "0fe98d26a927ac6a63e2961ce5959b1eeecc32740570df880e6835addd815e87",
-    "extract_dir": "omni-1.0.2",
+    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.3.zip",
+    "hash": "83f7703b1ed096b25ff697a7d8a72410e54a29b564421884116ab699c7ed1b9b",
+    "extract_dir": "omni-1.0.3",
     "bin": [
         "o.cmd",
-        "os.cmd",
         "omni.cmd"
     ]
 }
