@@ -1,0 +1,21 @@
+{
+    "depends": [
+      "core",
+      "neovim",
+      "fzf",
+      "ripgrep",
+      "everything-cli"
+    ],
+    "version": "1.0.2",
+    "description": "Omni Folder Navigation Utility",
+    "homepage": "https://github.com/sadirano/omni",
+    "license": "MIT",
+    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.2.zip",
+    "hash": "0fe98d26a927ac6a63e2961ce5959b1eeecc32740570df880e6835addd815e87",
+    "extract_dir": "omni-1.0.2",
+    "bin": [
+        "o.cmd",
+        "os.cmd",
+        "omni.cmd"
+    ]
+}
