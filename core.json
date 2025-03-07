@@ -1,6 +1,7 @@
 {
     "depends": [
-      "7zip"
+        "7zip",
+        "clink"
     ],
     "version": "1.0.0",
     "description": "Noir Core Utility Scripts – Lightweight Windows batch scripts to enhance administrative tasks.",
