@@ -1,24 +1,32 @@
 {
     "depends": [
+      "bat",
       "core",
       "neovim",
       "fzf",
       "ripgrep",
       "everything-cli"
     ],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Omni Folder Navigation Utility",
     "homepage": "https://github.com/sadirano/omni",
     "license": "MIT",
-    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.4.zip",
-    "hash": "093b9b252721248413ffc377ee40b42a7f8f19075b75d0d7a01d84325b2b5abc",
-    "extract_dir": "omni-1.0.4",
+    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.5.zip",
+    "hash": "7c2d3680242de3b8316ead5e2facff30427cd674383506dca8f2d387a397dbed",
+    "extract_dir": "omni-1.0.5",
     "bin": [
-        "e.cmd",
+        "omni.ps1",
+        "c.cmd",
         "f.cmd",
-        "s.cmd",
+        "ff.cmd",
         "n.cmd",
         "o.cmd",
-        "omni.cmd"
+        "r.cmd",
+        "s.cmd",
+        "sg.cmd",
+        "y.cmd"
+    ],
+    "post_install": [
+      "if (-not $env:EDITOR) { [System.Environment]::SetEnvironmentVariable('EDITOR', 'nvim', [System.EnvironmentVariableTarget]::User) }"
     ]
 }
