@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "description": "Just a collection of tools I use in my workflow.",
+  "homepage": "https://github.com/sadirano",
+  "license": "MIT",
+  "depends": [
+    "clink",
+    "fzf",
+    "ripgrep",
+    "sadirano/omni",
+    "sadirano/noir",
+  ],
+  "suggest": {
+    "windows-terminal": "extras/windows-terminal",
+    "mononoki": "nerd-fonts/mononoki-NF-Mono",
+    "bat": "main/bat",
+    "gh": "main/gh",
+    "sqlite": "main/sqlite",
+    "everything-alpha": "versions/everything-alpha",
+    "everything-cli": "main/everything-cli",
+    "powershell-core": "main/pwsh",
+  },
+}

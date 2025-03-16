@@ -7,9 +7,9 @@
     "description": "Noir Core Utility Scripts – Lightweight Windows batch scripts to enhance administrative tasks.",
     "homepage": "https://github.com/sadirano/core",
     "license": "MIT",
-    "url": "https://github.com/sadirano/core/archive/refs/tags/v1.0.0.zip",
+    "url": "https://github.com/sadirano/core/archive/refs/tags/v$version.zip",
     "hash": "A11E6A083F96A4E1495F30E7638A8C72924ACD3FC6793E80341E55C44214FB83",
-    "extract_dir": "core-1.0.0",
+    "extract_dir": "core-$version",
     "bin": [
         "adm.cmd",
         "env.cmd",
@@ -17,7 +17,11 @@
         "restart.cmd",
         "hash.cmd"
     ],
-    "post_install": [
-        "clink set clink.autostart \"C:\\Windows\\System32\\doskey.exe\" /macrofile=%userprofile%\\scoop\\apps\\core\\current\\doskey.mac"
-    ]
+    "post_install": "clink set clink.autostart \"C:\\Windows\\System32\\doskey.exe\" /macrofile=%userprofile%\\scoop\\apps\\core\\current\\doskey.mac",
+    "checkver": {
+        "github": "https://github.com/sadirano/core"
+    },
+    "autoupdate": {
+        "url": "https://github.com/sadirano/core/archive/refs/tags/v$version.zip"
+    }
 }
