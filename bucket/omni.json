@@ -5,7 +5,9 @@
         "neovim",
         "fzf",
         "ripgrep",
-        "everything-cli"
+        "everything-cli",
+        "less",
+        "vcredist2022"
     ],
     "version": "1.0.6",
     "description": "Omni Folder Navigation Utility",
@@ -26,7 +28,12 @@
         "sg.cmd",
         "y.cmd"
     ],
-    "post_install": "if (-not $env:EDITOR) { [System.Environment]::SetEnvironmentVariable('EDITOR', 'nvim', [System.EnvironmentVariableTarget]::User) }",
+    "post_install": [
+        "if (-not $env:EDITOR) {",
+        "    $env:EDITOR = 'nvim';",
+        "    [System.Environment]::SetEnvironmentVariable('EDITOR', 'nvim', [System.EnvironmentVariableTarget]::User);",
+        "}"
+    ],
     "checkver": {
         "github": "https://github.com/sadirano/omni"
     },

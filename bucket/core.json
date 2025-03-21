@@ -17,7 +17,11 @@
         "restart.cmd",
         "hash.cmd"
     ],
-    "post_install": "clink set clink.autostart \"C:\\Windows\\System32\\doskey.exe\" /macrofile=%userprofile%\\scoop\\apps\\core\\current\\doskey.mac",
+    "post_install": [
+      "clink autorun install",
+      "clink set clink.autostart \"C:\\Windows\\System32\\doskey.exe\" /macrofile=%userprofile%\\scoop\\apps\\core\\current\\doskey.mac",
+      "clink set clink.logo none"
+    ],
     "checkver": {
         "github": "https://github.com/sadirano/core"
     },
