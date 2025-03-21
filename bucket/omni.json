@@ -7,7 +7,8 @@
         "ripgrep",
         "everything-cli",
         "less",
-        "vcredist2022"
+        "vcredist2022",
+        "pwsh"
     ],
     "version": "1.0.6",
     "description": "Omni Folder Navigation Utility",
