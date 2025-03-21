@@ -1,0 +1,39 @@
+{
+    "depends": [
+        "core",
+        "pwsh"
+    ],
+    "version": "1.0.6",
+    "description": "Omni Folder Navigation Utility",
+    "homepage": "https://github.com/sadirano/omni",
+    "license": "MIT",
+    "url": "https://github.com/sadirano/omni/archive/refs/tags/v1.0.6.zip",
+    "hash": "53a85ecb36b401a97bb3f9ea246582a48836fddda52961e85e0c0159d8b70841",
+    "extract_dir": "omni-1.0.6",
+    "bin": [
+        "omni.ps1",
+        "c.cmd",
+        "f.cmd",
+        "ff.cmd",
+        "n.cmd",
+        "o.cmd",
+        "r.cmd",
+        "s.cmd",
+        "sg.cmd",
+        "y.cmd"
+    ],
+    "post_install": [
+        "if (-not $env:EDITOR) {",
+        "    $env:EDITOR = 'notepad';",
+        "    [System.Environment]::SetEnvironmentVariable('EDITOR', 'notepad', [System.EnvironmentVariableTarget]::User);",
+        "}"
+    ],
+    "checkver": {
+        "github": "https://github.com/sadirano/omni"
+    },
+    "autoupdate": {
+        "url": "https://github.com/sadirano/omni/archive/refs/tags/v$version.zip",
+        "extract_dir": "omni-$version"
+    }
+}
+
