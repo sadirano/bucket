@@ -12,7 +12,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sadirano/onix/releases/download/v$version/onix-v$version-windows-amd64.zip",
+            "url": "https://github.com/sadirano/onix/releases/download/v0.1.0/onix-v0.1.0-windows-amd64.zip",
             "hash": "37e9ae275151ed69f6bff16e36fd633739bb9a1a6a9d55a7f106de3d0aa96c86"
         }
     },
