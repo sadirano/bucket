@@ -6,14 +6,14 @@
         "everything-cli",
         "neovim"
     ],
-    "version": "0.1.0",
-    "description": "Modular directory navigator for Windows — alias-based shell, editor, Explorer, and module dispatch",
+    "version": "0.1.1",
+    "description": "Modular directory navigator for Windows - alias-based shell, editor, Explorer, and module dispatch",
     "homepage": "https://github.com/sadirano/onix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sadirano/onix/releases/download/v0.1.0/onix-v0.1.0-windows-amd64.zip",
-            "hash": "37e9ae275151ed69f6bff16e36fd633739bb9a1a6a9d55a7f106de3d0aa96c86"
+            "url": "https://github.com/sadirano/onix/releases/download/v0.1.1/onix-v0.1.1-windows-amd64.zip",
+            "hash": "b6d6ca17c241a1b8efe95d7be9947cf5137d946019f1a14cd154b397fa3ab6bd"
         }
     },
     "bin": "onix.exe",
