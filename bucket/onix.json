@@ -13,7 +13,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/sadirano/onix/releases/download/v0.1.1/onix-v0.1.1-windows-amd64.zip",
-            "hash": "b6d6ca17c241a1b8efe95d7be9947cf5137d946019f1a14cd154b397fa3ab6bd"
+            "hash": "1a4482db9986446e3bf08f02efce69a6eb6d72818524dc6cf79af8df9c844c70"
         }
     },
     "bin": "onix.exe",
@@ -30,6 +30,6 @@
             "64bit": {
                 "url": "https://github.com/sadirano/onix/releases/download/v$version/onix-v$version-windows-amd64.zip"
             }
-        }
+    }
     }
 }
