@@ -19,8 +19,7 @@
     "bin": "onix.exe",
     "persist": "onix.visual.toml",
     "post_install": [
-        "onix init",
-        "onix shortcuts"
+        "onix --init"
     ],
     "checkver": {
         "github": "https://github.com/sadirano/onix"
@@ -30,6 +29,6 @@
             "64bit": {
                 "url": "https://github.com/sadirano/onix/releases/download/v$version/onix-v$version-windows-amd64.zip"
             }
-    }
+        }
     }
 }
