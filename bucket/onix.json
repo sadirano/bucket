@@ -4,10 +4,11 @@
         "fzf",
         "ripgrep",
         "everything-cli",
-        "neovim"
+        "neovim",
+        "clink"
     ],
     "version": "0.5.1",
-    "description": "Modular directory navigator for Windows - alias-based shell, editor, Explorer, and module dispatch",
+    "description": "Fast directory alias resolver - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/onix",
     "license": "MIT",
     "architecture": {
@@ -17,9 +18,10 @@
         }
     },
     "bin": "onix.exe",
-    "persist": "onix.visual.toml",
     "post_install": [
-        "onix --init"
+        "onix --init",
+        "clink autorun install | Out-Null",
+        "clink set autosuggest.inline true | Out-Null"
     ],
     "checkver": {
         "github": "https://github.com/sadirano/onix"
