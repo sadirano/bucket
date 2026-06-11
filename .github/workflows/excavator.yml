@@ -1,0 +1,24 @@
+# Auto-bump manifests: runs Scoop's checkver/autoupdate against every
+# manifest in bucket/ and commits version+hash bumps, so tagging a release
+# in the app repo is enough — no more manual download/SHA256/edit cycle.
+name: Excavator
+
+on:
+  schedule:
+    - cron: '20 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: 1
