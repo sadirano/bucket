@@ -7,14 +7,14 @@
         "neovim",
         "clink"
     ],
-    "version": "0.5.1",
+    "version": "0.6.0",
     "description": "Fast directory alias resolver - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/onix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sadirano/onix/releases/download/v0.5.1/onix-v0.5.1-windows-amd64.zip",
-            "hash": "112dc367dd9fa40e62abdabaeca89a1b7c4e714e3e3267436a80fb4c6dd22e51"
+            "url": "https://github.com/sadirano/onix/releases/download/v0.6.0/onix-v0.6.0-windows-amd64.zip",
+            "hash": "e7f66e467c3b73241bc0961cf99d05e27a6bae06c6cda6a3dbdae5b9f40e3999"
         }
     },
     "bin": "onix.exe",
