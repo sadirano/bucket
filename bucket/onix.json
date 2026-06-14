@@ -1,33 +1,33 @@
 {
-  "depends": [
-    "bat",
-    "fzf",
-    "ripgrep",
-    "everything-cli",
-    "neovim",
-    "clink",
-    "sadirano/core"
-  ],
-  "version": "0.6.0",
-  "description": "Fast directory alias resolver - type 'o acme' from any prompt and your shell jumps to the project root",
-  "homepage": "https://github.com/sadirano/onix",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/sadirano/onix/releases/download/v0.6.0/onix-v0.6.0-windows-amd64.zip",
-      "hash": "e7f66e467c3b73241bc0961cf99d05e27a6bae06c6cda6a3dbdae5b9f40e3999"
-    }
-  },
-  "bin": "onix.exe",
-  "post_install": ["onix --init"],
-  "checkver": {
-    "github": "https://github.com/sadirano/onix"
-  },
-  "autoupdate": {
+    "depends": [
+        "bat",
+        "fzf",
+        "ripgrep",
+        "everything-cli",
+        "neovim",
+        "clink",
+        "sadirano/core"
+    ],
+    "version": "0.7.0",
+    "description": "Fast directory alias resolver - type 'o acme' from any prompt and your shell jumps to the project root",
+    "homepage": "https://github.com/sadirano/onix",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/sadirano/onix/releases/download/v$version/onix-v$version-windows-amd64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/sadirano/onix/releases/download/v0.7.0/onix-v0.7.0-windows-amd64.zip",
+            "hash": "af750a4d7060d0636dbb85a4186f76c19c20e11aeb78bca4ad4cfa9ba6cb1127"
+        }
+    },
+    "bin": "onix.exe",
+    "post_install": "onix --init",
+    "checkver": {
+        "github": "https://github.com/sadirano/onix"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sadirano/onix/releases/download/v$version/onix-v$version-windows-amd64.zip"
+            }
+        }
     }
-  }
 }
