@@ -3,11 +3,13 @@
         "bat",
         "fzf",
         "ripgrep",
-        "everything-cli",
         "neovim",
         "clink",
         "sadirano/core"
     ],
+    "suggest": {
+        "Everything (es CLI, enables the directory picker for unknown aliases)": "main/everything-cli"
+    },
     "version": "0.7.1",
     "description": "Fast directory alias resolver (Zig rewrite of onix, ~2x faster startup) - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/nix",
