@@ -26,10 +26,10 @@ scoop add bucket extras
 
 ## Installing Tools
 
-Once the bucket is added, you can install tools from it. For example, to install the **omni** tool, run:
+Once the bucket is added, you can install tools from it. For example, to install the **nix** tool, run:
 
 ```powershell
-scoop install omni
+scoop install nix
 ```
 
 ## License

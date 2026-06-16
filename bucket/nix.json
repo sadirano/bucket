@@ -8,14 +8,14 @@
         "clink",
         "sadirano/core"
     ],
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "Fast directory alias resolver (Zig rewrite of onix, ~2x faster startup) - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/nix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sadirano/nix/releases/download/v0.7.0/nix-v0.7.0-windows-amd64.zip",
-            "hash": "50ddbfd2b4fcca2a994309b6f841baf7d46af6128412f69d73f7779e00a8c086"
+            "url": "https://github.com/sadirano/nix/releases/download/v0.7.1/nix-v0.7.1-windows-amd64.zip",
+            "hash": "2812cf2f2c573085f3d59c099c150641656ddff4ca84604dac370c2acdd208c7"
         }
     },
     "bin": "nix.exe",
