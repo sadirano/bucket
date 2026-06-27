@@ -3,6 +3,7 @@
         "bat",
         "fzf",
         "ripgrep",
+        "fd",
         "neovim",
         "clink",
         "sadirano/core"
