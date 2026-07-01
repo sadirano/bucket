@@ -1,0 +1,26 @@
+{
+    "depends": [
+        "bat",
+        "fzf",
+        "ripgrep",
+        "fd",
+        "neovim",
+        "clink",
+        "sadirano/core"
+    ],
+    "suggest": {
+        "Everything (es CLI, enables the directory picker for unknown aliases)": "main/everything-cli",
+        "ripgrep-all (rga, enables 'sg --all' search inside PDFs/office docs/archives)": "main/rga"
+    },
+    "version": "nightly",
+    "description": "Fast directory alias resolver (Zig rewrite of onix) - NIGHTLY channel, rolling build of the latest main commit. Installs the same 'nix.exe' as sadirano/nix; install one or the other. 'scoop update' re-pulls once per day.",
+    "homepage": "https://github.com/sadirano/nix",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sadirano/nix/releases/download/nightly/nix-nightly-windows-amd64.zip"
+        }
+    },
+    "bin": "nix.exe",
+    "post_install": "nix --init"
+}
