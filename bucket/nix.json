@@ -12,14 +12,14 @@
         "Everything (es CLI, enables the directory picker for unknown aliases)": "main/everything-cli",
         "ripgrep-all (rga, enables 'sg --all' search inside PDFs/office docs/archives)": "main/rga"
     },
-    "version": "0.8.1",
+    "version": "0.9.0",
     "description": "Directory alias manager - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/nix",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sadirano/nix/releases/download/v0.8.1/nix-v0.8.1-windows-amd64.zip",
-            "hash": "161a629cf9a4f00b30bf774661c1e3d42a17592f58254989e89e704af451a481"
+            "url": "https://github.com/sadirano/nix/releases/download/v0.9.0/nix-v0.9.0-windows-amd64.zip",
+            "hash": "4c54652c378014aa34731bc49a6aee7e48bb2990d5438069ad72858a87894fc2"
         }
     },
     "bin": "nix.exe",
