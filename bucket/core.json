@@ -1,18 +1,19 @@
 {
   "depends": ["7zip", "clink"],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Noir Core Utility Scripts – Lightweight Windows batch scripts to enhance administrative tasks.",
   "homepage": "https://github.com/sadirano/core",
   "license": "MIT",
-  "url": "https://github.com/sadirano/core/archive/refs/tags/v1.0.0.zip",
-  "hash": "a11e6a083f96a4e1495f30e7638a8c72924acd3fc6793e80341e55c44214fb83",
-  "extract_dir": "core-1.0.0",
-  "bin": ["adm.cmd", "env.cmd", "h.cmd", "restart.cmd"],
+  "url": "https://github.com/sadirano/core/archive/refs/tags/v1.1.0.zip",
+  "hash": "a1f6eb3f2d472ba08367cee332ab27cec5085be6eca2b7bb2c4baa033e35ab30",
+  "extract_dir": "core-1.1.0",
+  "bin": ["adm.cmd", "env.cmd", "h.cmd", "hosts.cmd", "mk.cmd", "restart.cmd"],
   "post_install": [
     "clink autorun install | Out-Null",
     "clink set clink.autostart \"C:\\Windows\\System32\\doskey.exe\" /macrofile=%userprofile%\\scoop\\apps\\core\\current\\doskey.mac | Out-Null",
     "clink set clink.logo none | Out-Null",
-    "clink set autosuggest.inline true | Out-Null"
+    "clink set autosuggest.inline true | Out-Null",
+    "powershell -NoProfile -ExecutionPolicy Bypass -File \"$dir\\install\\setup.ps1\""
   ],
   "checkver": {
     "github": "https://github.com/sadirano/core"
