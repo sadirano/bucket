@@ -1,13 +1,4 @@
 {
-    "depends": [
-        "bat",
-        "fzf",
-        "ripgrep",
-        "fd",
-        "neovim",
-        "clink",
-        "sadirano/core"
-    ],
     "suggest": {
         "Everything (es CLI, enables the directory picker for unknown aliases)": "main/everything-cli",
         "ripgrep-all (rga, enables 'sg --all' search inside PDFs/office docs/archives)": "main/rga"

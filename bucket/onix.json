@@ -1,13 +1,4 @@
 {
-    "depends": [
-        "bat",
-        "fzf",
-        "ripgrep",
-        "everything-cli",
-        "neovim",
-        "clink",
-        "sadirano/core"
-    ],
     "version": "0.7.0",
     "description": "Fast directory alias resolver - type 'o acme' from any prompt and your shell jumps to the project root",
     "homepage": "https://github.com/sadirano/onix",
