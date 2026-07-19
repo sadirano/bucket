@@ -32,6 +32,24 @@ Once the bucket is added, you can install tools from it. For example, to install
 scoop install nix
 ```
 
+## Nightly Channel
+
+**nix-nightly** installs a rolling build of `nix`'s `main` branch, rebuilt daily.
+It shares the same `nix.exe` as the stable `nix` package, so install one or the
+other, not both:
+
+```powershell
+scoop install sadirano/nix-nightly
+```
+
+Scoop only re-pulls a nightly-versioned package once its global `UPDATE_NIGHTLY`
+config is enabled (off by default, every `nightly-*` version otherwise compares
+as equal, so `scoop update` sees nothing to do):
+
+```powershell
+scoop config UPDATE_NIGHTLY true
+```
+
 ## License
 
 This project is released under the [MIT License](LICENSE).

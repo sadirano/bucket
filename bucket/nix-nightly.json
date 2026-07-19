@@ -4,7 +4,7 @@
         "ripgrep-all (rga, enables 'sg --all' search inside PDFs/office docs/archives)": "main/rga"
     },
     "version": "nightly",
-    "description": "Directory alias manager - NIGHTLY channel, rolling build of the latest main commit. Installs the same 'nix.exe' as sadirano/nix; install one or the other. 'scoop update' re-pulls once per day.",
+    "description": "Directory alias manager - NIGHTLY channel, rolling build of the latest main commit. Installs the same 'nix.exe' as sadirano/nix; install one or the other. Run 'scoop config UPDATE_NIGHTLY true' once so 'scoop update' re-pulls this channel daily (off by default, Scoop treats all nightly versions as equal otherwise).",
     "homepage": "https://github.com/sadirano/nix",
     "license": "MIT",
     "architecture": {
